@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أفضل الجامعات الخاصة في إسطنبول</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;800&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ar', // اللغة الأصلية للموقع
+      includedLanguages: 'ar,en,tr', // اللغات المتاحة (يمكنك إضافة المزيد)
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<div id="google_translate_element" style="text-align: right;"></div>
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #222;
+    }
+    .header {
+      background: #00427c;
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+    }
+    .back-btn {
+      display: inline-block;
+      background: #00427c;
+      color: #fff;
+      padding: .6rem 1.4rem;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background .15s;
+      margin-bottom: 2.2rem;
+      margin-right: 1vw;
+    }
+    .back-btn:hover {
+      background: rgba(20, 20, 143, 0.65)
+      color: #fff;
+    }
+    .university-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.university-card {
+  background-color: #ffffffee;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #00427c11;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 340px; /* يجعل البطاقات بطول متساوي */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.university-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px #00427c26;
+}
+
+.university-card h2 {
+  font-size: 1.2rem;
+  color: #00427c;
+  margin-bottom: 0.5rem;
+}
+
+.university-card .desc {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.university-card .extra-desc {
+  font-size: 0.94rem;
+  color: #555;
+  flex-grow: 1;
+  margin-bottom: 0.7rem;
+}
+
+.university-card .tags {
+  margin-bottom: 0.8rem;
+}
+
+.university-card .tag {
+  display: inline-block;
+  background-color: #e9f3ff;
+  color: #00427c;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.university-card .info-block {
+  font-size: 0.91rem;
+  margin-bottom: 0.4rem;
+}
+
+.uni-apply-btn {
+  background-color: #00427c;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.uni-apply-btn:hover {
+  background-color: #00325e;
+}
+
+.filter-search-wrapper {
+  background: #ffffffcc;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #00427c0f;
+  margin: 2rem auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.filter-search-wrapper input {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  border: 1.5px solid #00427c55;
+  margin-bottom: 1.3rem;
+  box-shadow: 0 1px 6px #00427c11;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  background-color: #00427c;
+  color: white;
+  border: none;
+  padding: 0.65rem 1.3rem;
+  border-radius: 8px;
+  font-size: 0.98rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #00325e;
+  box-shadow: 0 2px 8px #00427c44;
+}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="index_Version46.html" class="back-btn">العودة للصفحة الرئيسية</a>
+    <h1>أفضل الجامعات الخاصة في إسطنبول</h1>
+  </div>
+<div class="filter-search-wrapper">
+  <input type="text" id="searchInput" placeholder="ابحث عن جامعة أو تخصص..." onkeyup="filterUniversities()">
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="setFilter('')">الكل</button>
+    <button class="filter-btn" onclick="setFilter('طب')">طب</button>
+    <button class="filter-btn" onclick="setFilter('هندسة')">هندسة</button>
+    <button class="filter-btn" onclick="setFilter('إدارة')">إدارة</button>
+    <button class="filter-btn" onclick="setFilter('إعلام')">إعلام</button>
+    <button class="filter-btn" onclick="setFilter('تمريض')">تمريض</button>
+  <div class="cards-container">
+    <!-- البطاقات السابقة (أول 20 جامعة) ... موجودة هنا ... -->
+
+    <!-- إضافة 20 جامعة خاصة جديدة -->
+    <div class="university-card">
+      <h2>Acıbadem University</h2>
+      <div class="desc">متخصصة في العلوم الصحية والطب</div>
+      <div class="extra-desc">تأسست عام 2007 وتُعتبر من أفضل الجامعات الطبية الخاصة في إسطنبول، تضم مستشفى تعليمي حديث وتركز على التدريب العملي في الطب والعلوم الصحية.</div>
+      <div class="tags">
+        <span class="tag">الطب</span>
+        <span class="tag">التمريض</span>
+        <span class="tag">الصيدلة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2007</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$8,000–24,000</div>
+        <button class="uni-apply-btn" data-uni="Acıbadem University">تقديم الآن</button>
+
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Okan University</h2>
+      <div class="desc">جامعة شاملة وقوية في الهندسة والأعمال</div>
+      <div class="extra-desc">تأسست عام 1999، وتقدم برامج متنوعة في الهندسة وإدارة الأعمال، وتوفر فرص تدريب عملي قوية للطلاب في سوق العمل التركي.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">الأعمال</span>
+        <span class="tag">العلاج الطبيعي</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>1999</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$4,500–16,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Okan University">تقديم الآن</button>
+
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Ticaret University</h2>
+      <div class="desc">تركيز على التجارة والإدارة والقانون</div>
+      <div class="extra-desc">تأسست عام 2001، وتُعد من أبرز الجامعات في تخصصات التجارة والإدارة والقانون، وتوفر بيئة تعليمية متطورة للطلاب الراغبين في دخول قطاع الأعمال.</div>
+      <div class="tags">
+        <span class="tag">إدارة الأعمال</span>
+        <span class="tag">القانون</span>
+        <span class="tag">الهندسة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2001</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$4,000–12,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Ticaret University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Sabahattin Zaim University</h2>
+      <div class="desc">تركيز على التربية والاقتصاد والعلوم الإسلامية</div>
+      <div class="extra-desc">تأسست عام 2010، وتقدم برامج قوية في التربية والاقتصاد والشريعة، وتهدف لتكوين جيل أكاديمي قادر على خدمة المجتمع.</div>
+      <div class="tags">
+        <span class="tag">التربية</span>
+        <span class="tag">الاقتصاد</span>
+        <span class="tag">الشريعة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2010</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$4,000–7,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Sabahattin Zaim University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Esenyurt University</h2>
+      <div class="desc">برامج متنوعة في الهندسة والإدارة والصحة</div>
+      <div class="extra-desc">تأسست عام 2013، وتتميز بتقديم برامج الهندسة والإدارة والعلوم الصحية مع بيئة تعليمية حديثة وتدريب عملي متواصل.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">الإدارة</span>
+        <span class="tag">التمريض</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2013</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,000–7,500</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Esenyurt University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Arel University</h2>
+      <div class="desc">جامعة متعددة الكليات وتدريب عملي قوي</div>
+      <div class="extra-desc">تأسست عام 2007، وتوفر برامج متنوعة في الهندسة والإعلام والأعمال، وتتميز بتدريب عملي قوي وشراكات مع شركات في تركيا.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">الإعلام</span>
+        <span class="tag">الأعمال</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2007</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,000–8,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Arel University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Gedik University</h2>
+      <div class="desc">تركز على التقنية والتخصصات الهندسية</div>
+      <div class="extra-desc">تأسست عام 2010، وتقدم برامج هندسية وتقنية متنوعة مع تركيز على التدريب العملي والبحث العلمي.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">التقنية</span>
+        <span class="tag">العلاج الفيزيائي</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2010</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,500–9,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Gedik University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Bilim University</h2>
+      <div class="desc">متخصصة في الطب والعلوم الصحية</div>
+      <div class="extra-desc">تأسست عام 2006، وتُعد من الجامعات الرائدة في الطب والعلوم الصحية، وتوفر تدريبًا عمليًا في المستشفيات التعليمية التابعة لها.</div>
+      <div class="tags">
+        <span class="tag">الطب</span>
+        <span class="tag">التمريض</span>
+        <span class="tag">العلاج الطبيعي</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2006</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$8,000–18,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Bilim University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Gelişim University</h2>
+      <div class="desc">جامعة سريعة النمو وبرامج متنوعة</div>
+      <div class="extra-desc">تأسست عام 2008، وتوفر برامج حديثة في الإعلام والهندسة والأعمال، وتتميز بسرعة تطورها وبيئة تعليمية ديناميكية.</div>
+      <div class="tags">
+        <span class="tag">الإعلام</span>
+        <span class="tag">الهندسة</span>
+        <span class="tag">الأعمال</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2008</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$4,000–8,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Gelişim University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Yeni Yüzyıl University</h2>
+      <div class="desc">تخصص في الطب والعلوم الصحية</div>
+      <div class="extra-desc">تأسست عام 2009، وتركز على تخصصات الطب وطب الأسنان والتمريض، وتوفر بيئة حديثة للطلاب الدوليين.</div>
+      <div class="tags">
+        <span class="tag">الطب</span>
+        <span class="tag">طب الأسنان</span>
+        <span class="tag">التمريض</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2009</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,000–13,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Yeni Yüzyıl University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Kültür University</h2>
+      <div class="desc">برامج إنجليزية وتركية وقوية في الهندسة</div>
+      <div class="extra-desc">تأسست عام 1997، وتُعد من الجامعات المعروفة بقوة برامج الهندسة والحقوق، وتقدم برامج باللغتين الإنجليزية والتركية.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">الحقوق</span>
+        <span class="tag">الإدارة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>1997</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$5,000–12,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Kültür University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Sehir University</h2>
+      <div class="desc">برامج متعددة وتركيز على العلوم الاجتماعية</div>
+      <div class="extra-desc">تأسست عام 2008، وتوفر تخصصات متعددة، وتتميز بقوة برامج العلوم الاجتماعية والهندسة والإدارة.</div>
+      <div class="tags">
+        <span class="tag">العلوم الاجتماعية</span>
+        <span class="tag">الهندسة</span>
+        <span class="tag">الإدارة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2008</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$5,000–12,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Sehir University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Topkapi University</h2>
+      <div class="desc">تركيز على الفنون والتصميم والتقنية</div>
+      <div class="extra-desc">تأسست عام 2012، وتتميز بقوة برامج الفنون والتصميم والتقنية، وتوفر بيئة تعليمية حديثة للطلاب المبدعين.</div>
+      <div class="tags">
+        <span class="tag">الفنون</span>
+        <span class="tag">التصميم</span>
+        <span class="tag">التقنية</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2012</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,000–8,000</div>
+      <button class="uni-apply-btn" data-uni="Istanbul Topkapi University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>İstanbul Atlas University</h2>
+      <div class="desc">برامج طبية وهندسية حديثة</div>
+      <div class="extra-desc">جامعة حديثة تأسست عام 2018 وتقدم تخصصات في الطب والهندسة والتمريض مع بيئة تعليمية متطورة.</div>
+      <div class="tags">
+        <span class="tag">الطب</span>
+        <span class="tag">التمريض</span>
+        <span class="tag">الهندسة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2018</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,000–17,400</div>
+        <button class="uni-apply-btn" data-uni="İstanbul Atlas University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Kent University</h2>
+      <div class="desc">برامج متنوعة في العلوم الصحية والإدارة</div>
+      <div class="extra-desc">تأسست عام 2016، وتوفر تخصصات التمريض والأعمال والإدارة، وتركز على إعداد الطلاب لسوق العمل.</div>
+      <div class="tags">
+        <span class="tag">التمريض</span>
+        <span class="tag">الأعمال</span>
+        <span class="tag">الإدارة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2016</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,000–8,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Kent University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Rumeli University</h2>
+      <div class="desc">تركيز على الإدارة والصحة والإعلام</div>
+      <div class="extra-desc">تأسست عام 2015، وتقدم برامج قوية في الإدارة والصحة والإعلام، مع بيئة تعليمية حديثة.</div>
+      <div class="tags">
+        <span class="tag">الإدارة</span>
+        <span class="tag">الصحة</span>
+        <span class="tag">الإعلام</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2015</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$3,000–7,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Rumeli University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Aydın University</h2>
+      <div class="desc">من أكبر الجامعات الخاصة وبرامج تقنية وفنية</div>
+      <div class="extra-desc">تأسست عام 2007، وتُعد من أكبر الجامعات الخاصة في تركيا، وتضم برامج تقنية وفنية وهندسية متنوعة.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">السياحة</span>
+        <span class="tag">الإعلام</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2007</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$4,000–10,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Aydın University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Beykent University</h2>
+      <div class="desc">تركيز على الهندسة والفنون الجميلة</div>
+      <div class="extra-desc">تأسست عام 1997، وتوفر برامج قوية في الهندسة والفنون الجميلة والتصميم، وتركز على الإبداع والابتكار.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">الفنون</span>
+        <span class="tag">التصميم</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>1997</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$4,000–9,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Beykent University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Haliç University</h2>
+      <div class="desc">برامج متنوعة وتركيز على الهندسة والطب</div>
+      <div class="extra-desc">تأسست عام 1998، وتضم تخصصات الهندسة والطب والفنون، وتوفر بيئة تعليمية عصرية للطلاب.</div>
+      <div class="tags">
+        <span class="tag">الهندسة</span>
+        <span class="tag">الطب</span>
+        <span class="tag">الفنون</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>1998</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$4,000–10,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Haliç University">تقديم الآن</button>
+      </div>
+    </div>
+    <div class="university-card">
+      <h2>Istanbul Şişli Vocational School</h2>
+      <div class="desc">معهد مهني متخصص في العلوم التطبيقية</div>
+      <div class="extra-desc">تأسس عام 2008، وهو معهد خاص يقدم برامج تطبيقية في التقنية والإدارة والعلوم الحديثة للطلاب.</div>
+      <div class="tags">
+        <span class="tag">العلوم التطبيقية</span>
+        <span class="tag">التقنية</span>
+        <span class="tag">الإدارة</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>2008</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$2,500–7,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Şişli Vocational School">تقديم الآن</button>
+      </div>
+      <div class="university-card">
+  <h2>Bahçeşehir University</h2>
+  <div class="desc">جامعة عالمية متعددة التخصصات</div>
+  <div class="extra-desc">تقع في قلب إسطنبول وتعد من أبرز الجامعات التركية عالميًا، تقدم برامج بالإنجليزية بالكامل، ولها فروع في عدة دول حول العالم.</div>
+  <div class="tags">
+    <span class="tag">الذكاء الاصطناعي</span>
+    <span class="tag">الهندسة</span>
+    <span class="tag">القانون الدولي</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 1998</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $8,500–25,000</div>
+    <button class="uni-apply-btn" data-uni="Bahçeşehir University">تقديم الآن</button>
+  </div>
+</div>
+
+<div class="university-card">
+  <h2>Kadir Has University</h2>
+  <div class="desc">جامعة بحثية متطورة</div>
+  <div class="extra-desc">تجمع بين التقاليد الأكاديمية والتكنولوجيا الحديثة، وتُعرف بقوة برامجها في الإعلام، القانون، والهندسة.</div>
+  <div class="tags">
+    <span class="tag">الإعلام</span>
+    <span class="tag">الهندسة</span>
+    <span class="tag">القانون</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 1997</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $6,000–15,000</div>
+    <button class="uni-apply-btn" data-uni="Kadir Has University">تقديم الآن</button>
+  </div>
+</div>
+
+<div class="university-card">
+  <h2>MEF University</h2>
+  <div class="desc">جامعة تركز على الابتكار والتعليم المقلوب</div>
+  <div class="extra-desc">تعتمد نموذج التعليم العكسي (Flipped Classroom)، وتوفر برامج تكنولوجية وإدارية حديثة بالإنجليزية.</div>
+  <div class="tags">
+    <span class="tag">الذكاء الاصطناعي</span>
+    <span class="tag">إدارة الأعمال</span>
+    <span class="tag">الهندسة المدنية</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 2012</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $5,000–12,000</div>
+    <button class="uni-apply-btn" data-uni="MEF University">تقديم الآن</button>
+  </div>
+</div>
+
+<div class="university-card">
+  <h2>Istanbul Medipol University</h2>
+  <div class="desc">الجامعة الطبية الأكثر تطورًا</div>
+  <div class="extra-desc">تُعد من أقوى الجامعات الطبية في تركيا، وتضم أكبر مشفى جامعي خاص في إسطنبول، وتقدم برامج طبية وهندسية متنوعة.</div>
+  <div class="tags">
+    <span class="tag">الطب</span>
+    <span class="tag">الصيدلة</span>
+    <span class="tag">الهندسة الطبية</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 2009</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $6,500–24,000</div>
+    <button class="uni-apply-btn" data-uni="Istanbul Medipol University">تقديم الآن</button>
+  </div>
+</div>
+<div class="university-card">
+  <h2>Istanbul Ozyegin University</h2>
+  <div class="desc">جامعة بحثية متقدمة تركز على الابتكار</div>
+  <div class="extra-desc">تأسست عام 2007 وتُعد من الجامعات الرائدة في مجال ريادة الأعمال، وتوفر برامج حديثة في الطيران، إدارة الأعمال، والهندسة.</div>
+  <div class="tags">
+    <span class="tag">ريادة الأعمال</span>
+    <span class="tag">الهندسة</span>
+    <span class="tag">علوم الطيران</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 2007</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $8,000–19,500</div>
+    <button class="uni-apply-btn" data-uni="Istanbul Ozyegin University">تقديم الآن</button>
+  </div>
+</div>
+
+<div class="university-card">
+  <h2>Istanbul Altınbaş University</h2>
+  <div class="desc">جامعة حديثة ذات بيئة دولية</div>
+  <div class="extra-desc">تأسست عام 2008 وتضم نسبة عالية من الطلاب الدوليين، وتُعرف ببرامجها القوية في الطب والهندسة والقانون.</div>
+  <div class="tags">
+    <span class="tag">الطب</span>
+    <span class="tag">الهندسة</span>
+    <span class="tag">القانون</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 2008</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $5,000–15,000</div>
+    <button class="uni-apply-btn" data-uni="Istanbul Altınbaş University">تقديم الآن</button>
+  </div>
+</div>
+
+<div class="university-card">
+  <h2>Istanbul Nişantaşı University</h2>
+  <div class="desc">جامعة عصرية تركز على التكنولوجيا والإعلام</div>
+  <div class="extra-desc">تأسست عام 2012، وتوفر برامج حديثة في الإعلام، التصميم، والإدارة، ضمن حرم تكنولوجي حديث في قلب إسطنبول.</div>
+  <div class="tags">
+    <span class="tag">الإعلام</span>
+    <span class="tag">الإدارة</span>
+    <span class="tag">التصميم الرقمي</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 2012</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $3,000–8,000</div>
+    <button class="uni-apply-btn" data-uni="Istanbul Nişantaşı University">تقديم الآن</button>
+  </div>
+</div>
+
+<div class="university-card">
+  <h2>Istanbul Istinye University</h2>
+  <div class="desc">جامعة تركز على الطب والتقنية</div>
+  <div class="extra-desc">تأسست عام 2015 بدعم من مجموعة MLP للرعاية الصحية، وتقدم برامج متميزة في الطب، العلاج الطبيعي، والهندسة.</div>
+  <div class="tags">
+    <span class="tag">الطب</span>
+    <span class="tag">العلاج الطبيعي</span>
+    <span class="tag">الهندسة</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 2015</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $5,000–16,000</div>
+    <button class="uni-apply-btn" data-uni="Istanbul Istinye University">تقديم الآن</button>
+  </div>
+</div>
+    <div class="university-card">
+      <h2>Istanbul Bilgi University</h2>
+      <div class="desc">جامعة رائدة في العلوم الاجتماعية والفنون</div>
+      <div class="extra-desc">تأسست عام 1996، وتُعرف بقوة برامجها في العلوم الاجتماعية، الفنون، والإعلام، وتقدم بيئة تعليمية دولية.</div>
+      <div class="tags">
+        <span class="tag">العلوم الاجتماعية</span>
+        <span class="tag">الفنون</span>
+        <span class="tag">الإعلام</span>
+      </div>
+      <div class="university-info">
+        <div class="info-block"><strong>سنة التأسيس:</strong>1996</div>
+        <div class="info-block"><strong>الرسوم السنوية:</strong>$5,000–15,000</div>
+        <button class="uni-apply-btn" data-uni="Istanbul Bilgi University">تقديم الآن</button>
+      </div>  
+    </div>
+    <div class="university-card">
+  <h2>Istanbul Istanbul Arel Vocational School</h2>
+  <div class="desc">برنامج تطبيقي لتأهيل مهني سريع</div>
+  <div class="extra-desc">معهد تطبيقي تابع لجامعة أريل، يركز على المجالات العملية مثل المبيعات، الإدارة، والعلاقات العامة بتدريب مكثف.</div>
+  <div class="tags">
+    <span class="tag">إدارة المبيعات</span>
+    <span class="tag">العلاقات العامة</span>
+    <span class="tag">التسويق</span>
+  </div>
+  <div class="university-info">
+    <div class="info-block"><strong>سنة التأسيس:</strong> 2013</div>
+    <div class="info-block"><strong>الرسوم السنوية:</strong> $2,000–4,000</div>
+    <button class="uni-apply-btn" data-uni="Istanbul Arel Vocational School">تقديم الآن</button>
+  </div>
+    <!-- انتهت البطاقات الإضافية -->
+  </div>
+</body>
+<script>
+  const applyBtns = document.querySelectorAll('.uni-apply-btn');
+  const whatsappNumber = "905521727223"; // رقمك
+
+  applyBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const university = btn.dataset.uni;
+      const message = `مرحباً، أريد التقديم على جامعة ${university}`;
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    });
+  });
+  let activeTag = '';
+
+function setFilter(tag) {
+  activeTag = tag.toLowerCase();
+
+  // تغيير الزر النشط
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.innerText.trim() === tag || (tag === '' && btn.innerText.trim() === 'الكل')) {
+      btn.classList.add('active');
+    }
+  });
+
+  filterUniversities();
+}
+
+function filterUniversities() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const cards = document.querySelectorAll(".university-card");
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    const matchesSearch = text.includes(input);
+    const matchesTag = activeTag === '' || text.includes(activeTag);
+    card.style.display = (matchesSearch && matchesTag) ? 'block' : 'none';
+  });
+}
+function sortUniversities() {
+  const cards = Array.from(document.querySelectorAll('.university-card'));
+  const container = cards[0].parentNode;
+  const criteria = document.getElementById("filterSelect").value;
+
+  cards.sort((a, b) => {
+    switch (criteria) {
+      case 'year-asc':
+        return a.dataset.year - b.dataset.year;
+      case 'year-desc':
+        return b.dataset.year - a.dataset.year;
+      case 'price-asc':
+        return a.dataset.price - b.dataset.price;
+      case 'edu':
+        return b.dataset.edu - a.dataset.edu;
+      default:
+        return 0;
+    }
+  });
+
+  cards.forEach(card => container.appendChild(card));
+}
+
+window.addEventListener('load', function () {
+  const userLang = navigator.language || navigator.userLanguage;
+  const langCode = userLang.substring(0, 2).toLowerCase();
+
+  const availableLangs = ['ar', 'en', 'tr'];
+  if (availableLangs.includes(langCode) && langCode !== 'ar') {
+    const interval = setInterval(() => {
+      const select = document.querySelector('select.goog-te-combo');
+      if (select) {
+        select.value = langCode;
+        select.dispatchEvent(new Event('change'));
+        clearInterval(interval);
+      }
+    }, 500);
+  }
+});
+
+
+</script>
+
+</html>
